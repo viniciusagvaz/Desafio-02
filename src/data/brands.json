@@ -1,0 +1,29 @@
+{
+  "brands": [
+    {
+      "id": 1,
+      "icon": "./src/assets/brands/versace.svg",
+      "name": "versace"
+    },
+    {
+      "id": 2,
+      "icon": "./src/assets/brands/zara.svg",
+      "name": "zara"
+    },
+    {
+      "id": 3,
+      "icon": "./src/assets/brands/gucci.svg",
+      "name": "gucci"
+    },
+    {
+      "id": 4,
+      "icon": "./src/assets/brands/prada.svg",
+      "name": "prada"
+    },
+    {
+      "id": 5,
+      "icon": "./src/assets/brands/ck.svg",
+      "name": "calvin klein"
+    }
+  ]
+}

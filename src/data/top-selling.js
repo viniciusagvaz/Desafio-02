@@ -1,0 +1,38 @@
+export const topSelling = [
+   {
+     id: 1,
+     picture: "prod5",
+     title: "Vertical Striped Shirt",
+     stars: 5,
+     price: 230.0,
+     inSale: true,
+     discount: 20,
+   },
+   {
+     id: 2,
+     picture: "prod6",
+     stars: 4.0,
+     title: "Courage Graphic T-shirt",
+     price: 145.0,
+     inSale: false,
+     discount: null,
+   },
+   {
+     id: 3,
+     picture: "prod7",
+     stars: 3,
+     title: "Loose Fit Bermuda",
+     price: 80.0,
+     inSale: false,
+     discount: null,
+   },
+   {
+     id: 4,
+     picture: "prod8",
+     stars: 4.5,
+     title: "Faded Skinny Jeans",
+     price: 210.0,
+     inSale: false,
+     discount: null,
+   },
+ ];
