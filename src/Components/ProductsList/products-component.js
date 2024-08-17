@@ -2,7 +2,7 @@ import Products from "../../Classes/products-class.js";
 
 import { createElementWithClass } from "../../Utils/create-elements.js";
 import { renderStars } from "../../Utils/generate-stars.js";
-import { productList } from "../../data/product-list.js";
+import { productList } from "../../Utils/all-products-list.js";
 
 function createFinalPriceElement(product) {
   const finalPrice = createElementWithClass("p", "final-price");
