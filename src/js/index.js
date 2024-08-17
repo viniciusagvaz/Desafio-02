@@ -5,7 +5,7 @@ import { renderStyles } from "../Components/DressStyles/dress-styles-component.j
 import { renderProducts } from "../Components/ProductsList/products-component.js";
 import { mobileMenu } from "../Components/AccordionMenu/accordion-menu.js";
 import { validator } from "../Validators/email-validator.js";
-import { renderReviews } from "../Components/Reviews/reviews-component.js";
+import { renderReviews } from "../Components/CustomersReview/customer-review-component.js";
 import {
   renderCurrentReview,
   renderReviewsPerWidth,
