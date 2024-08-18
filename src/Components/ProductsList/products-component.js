@@ -48,7 +48,7 @@ function createProductTitle(title) {
 }
 
 function createProductCard(product) {
-  const productCard = createElementWithClass("figure", "product-card");
+  const productCard = createElementWithClass("figure", "product-figure");
   const productImg = createProductImage(product.picture, product.title);
   const productTitle = createProductTitle(product.title);
 
@@ -60,7 +60,7 @@ function createProductCard(product) {
 
 export function renderProducts(productCategory, container) {
   productList(productCategory, Products).forEach((product) => {
-    const productCardContainer = createElementWithClass("div", "product-card");
+    const productCardContainer = createElementWithClass("div", "product-card--container");
 
     const productCard = createProductCard(product);
     const productRating = renderStars(product.stars, true);

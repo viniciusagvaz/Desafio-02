@@ -23,6 +23,7 @@ export function renderCurrentReview() {
 }
 
 export function renderReviewsPerWidth() {
+  currentReviewIndex = 0;
   reviewsPerWidth = window.innerWidth <= 668 ? 1 : 3;
   renderCurrentReview();
 }
@@ -44,7 +45,5 @@ function goToNextReview() {
 
 prevButton.addEventListener("click", goToPreviousReview);
 nextButton.addEventListener("click", goToNextReview);
-
-renderCurrentReview();
 
 window.addEventListener("resize", renderReviewsPerWidth);
