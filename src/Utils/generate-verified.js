@@ -11,6 +11,6 @@ export function renderVerified() {
   verifiedContainer.classList.add("verified-container");
   const verified = createIsVerified();
   verifiedContainer.appendChild(verified);
-  
+
   return verifiedContainer;
 }

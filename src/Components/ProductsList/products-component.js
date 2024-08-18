@@ -1,5 +1,4 @@
 import Products from "../../Classes/products-class.js";
-
 import { createElementWithClass } from "../../Utils/create-elements.js";
 import { renderStars } from "../../Utils/generate-stars.js";
 import { productList } from "../../Utils/all-products-list.js";
@@ -60,7 +59,10 @@ function createProductCard(product) {
 
 export function renderProducts(productCategory, container) {
   productList(productCategory, Products).forEach((product) => {
-    const productCardContainer = createElementWithClass("div", "product-card--container");
+    const productCardContainer = createElementWithClass(
+      "div",
+      "product-card--container"
+    );
 
     const productCard = createProductCard(product);
     const productRating = renderStars(product.stars, true);

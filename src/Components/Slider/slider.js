@@ -40,7 +40,7 @@ function goToNextReview() {
   if (currentReviewIndex < totalReviews - 1) {
     currentReviewIndex++;
     renderCurrentReview();
-  } 
+  }
 }
 
 prevButton.addEventListener("click", goToPreviousReview);

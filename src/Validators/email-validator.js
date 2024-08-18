@@ -1,4 +1,3 @@
-
 let emailInput = document.querySelector("#email-input");
 
 function validateEmail(email) {

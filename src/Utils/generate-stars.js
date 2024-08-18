@@ -31,7 +31,7 @@ export function renderStars(rating, showRating = false) {
 
   const ratingSpan = document.createElement("span");
   ratingSpan.textContent = `${rating}/5`;
-  
+
   if (showRating) {
     starsContainer.appendChild(ratingSpan);
   }

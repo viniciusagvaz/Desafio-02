@@ -28,10 +28,9 @@ function createReviewCard(review) {
   const reviewAuthor = createReviewAuthor(review);
   const reviewText = createReviewText(review);
 
-  
-  reviewAuthorContainer.appendChild(reviewAuthor)
-  reviewAuthorContainer.appendChild(reviewVerified)
-  
+  reviewAuthorContainer.appendChild(reviewAuthor);
+  reviewAuthorContainer.appendChild(reviewVerified);
+
   reviewCard.appendChild(reviewStars);
   reviewCard.appendChild(reviewAuthorContainer);
   reviewCard.appendChild(reviewText);
@@ -41,7 +40,6 @@ function createReviewCard(review) {
 }
 
 function createReviewAuthor(review) {
-
   const reviewAuthor = createElementWithClass("p", "review-author");
   reviewAuthor.classList.add(review.isVerified ? "verified" : "unverified");
   reviewAuthor.textContent = review.name;
@@ -68,4 +66,3 @@ export function renderReviews() {
     reviewsContainer.appendChild(reviewCard);
   });
 }
-
