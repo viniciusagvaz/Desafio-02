@@ -1,5 +1,6 @@
 export function createIsVerified() {
-  const verified = document.createElement("img", "verified");
+  const verified = document.createElement("img");
+  verified.alt = "verified";
   verified.src = "/src/assets/icons/verified.svg";
   verified.style.width = "19px";
   verified.style.height = "19px";

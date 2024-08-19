@@ -16,8 +16,8 @@ const fetchBrands = async () => {
 
 export const renderBrands = async () => {
   try {
-    const brandsList = await fetchBrands();
-    const brandsUl = document.querySelector("#brand-list");
+    const brandsList = await fetchBrands();  
+    const brandsUl = document.querySelector("#brand-list"); 
 
     brandsList.brands.forEach((brand) => {
       const item = document.createElement("li");
@@ -25,6 +25,7 @@ export const renderBrands = async () => {
 
       item.classList.add("brand-item");
       logo.classList.add("brand-logo");
+      logo.alt = `${brand.name} logo`
 
       logo.src = brand.icon;
       item.appendChild(logo);

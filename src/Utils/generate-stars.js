@@ -1,5 +1,6 @@
 export function createFullStarElement() {
-  const fullStar = document.createElement("img", "full-star");
+  const fullStar = document.createElement("img");
+  fullStar.alt = "full-star";
   fullStar.src = "/src/assets/icons/star.svg";
   fullStar.style.width = "19px";
   fullStar.style.height = "19px";
@@ -7,7 +8,8 @@ export function createFullStarElement() {
 }
 
 export function createHalfStarElement() {
-  const halfStar = document.createElement("img", "half-star");
+  const halfStar = document.createElement("img");
+  halfStar.alt = "half-star";
   halfStar.src = "/src/assets/icons/half-star.svg";
   halfStar.style.width = "19px";
   halfStar.style.height = "19px";

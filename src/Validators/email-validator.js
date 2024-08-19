@@ -3,9 +3,9 @@ function validateEmail(email) {
 }
 
 export function validator(e) {
-  let emailInput = document.querySelector("#email-input");
   e.preventDefault();
-
+  
+  let emailInput = document.querySelector("#email-input");
   let email = emailInput.value;
 
   if (validateEmail(email)) {

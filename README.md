@@ -1,4 +1,5 @@
 # Desafio 02 Front-end || Compass Uol
+###### Estagiário Vinícius Vaz
  
 #### Um projeto de front-end para criar uma página web responsiva e interativa.
 
@@ -14,3 +15,15 @@
 - HTML5: Estruturação da página
 - CSS3: Estilização e layout
 - JavaScript: Interatividade e dinamismo 
+- VSCode: Ferramenta de desenvolvimento
+- GitHub: Repositorio
+- Vercel: Hosting
+
+###### Próximos passos: 
+- Refatoração do código
+- Implementação de Single Page Application
+- Criação de novas funcionalidades
+- Criação de novas páginas
+- Criação de novos temas
+
+![alt text](src/assets/icons/vv-logo.ico)
