@@ -1,0 +1,156 @@
+@font-face {
+  font-family: "integral";
+  src: url(/src/assets/fonts/integral.otf);
+}
+
+@font-face {
+  font-family: "satoshi";
+  src: url(/src/assets/fonts/satoshi.ttf);
+}
+
+button:not(:has(svg)) {
+  width: 210px;
+  background-color: #000;
+  color: #fff;
+
+  font-weight: 600;
+  padding: 16px 54px;
+  border-radius: 62px;
+  border: none;
+  transition: all 0.6s ease;
+
+  &:hover {
+    cursor: pointer;
+    opacity: 90%;
+    box-shadow: 12px 12px 12px 0 rgba(0, 0, 0, 0.1), -10px -10px 10px 0 white;
+  }
+}
+
+button:has(svg) {
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  border: none;
+  width: auto;
+  height: auto;
+
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    cursor: pointer;
+    opacity: 60%;
+  }
+}
+
+input[type="text"] {
+  width: 100%;
+  font-size: 1rem;
+  border: none;
+  background-color: transparent;
+
+  &:focus {
+    outline: none;
+  }
+
+  &::placeholder {
+    color: #00000040;
+  }
+}
+
+.mobile-show {
+  display: none;
+}
+
+.md-title {
+  font: 3rem "integral", sans-serif;
+  margin: 3rem 0 2rem;
+}
+
+@media (width < 1200px) {
+  .tablet-hide {
+    display: none;
+  }
+
+  .tablet-show {
+    visibility: visible;
+  }
+
+  .md-title {
+    font-size: 2rem;
+  }
+
+  button:not(:has(svg)) {
+    width: 358px;
+  }
+}
+
+@media (width < 668px) {
+
+  .mobile-hide {
+    display: none;
+    visibility: hidden;
+  }
+
+  .mobile-show {
+    display: block;
+    visibility: visible;
+  }
+
+
+
+  main.site-main {
+    section.products-section--container {
+      section.products-container {
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 1rem;
+        width: 320px;
+        overflow-x: scroll;
+        scroll-snap-type: x proximity;
+
+        div.product-card--container {
+          scroll-snap-align: center;
+          width: 320px;
+          padding: 0 0 1rem 1rem;
+          border-radius: 20px;
+          margin-bottom: 1rem;
+        }
+      }
+
+      article.product-category-container {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 1.5rem;
+
+        &:first-of-type {
+          border-bottom: 1px solid #00000010;
+          padding-bottom: 4rem;
+        }
+      }
+
+      img.product-img {
+        width: 295px;
+        height: 298px;
+        border-radius: 20px;
+        object-fit: cover;
+      }
+    }
+
+    section.dress-styles--container {
+      text-align: center;
+      margin: 1rem;
+
+      article.style-list--container {
+        figure.style-card {
+          height: 190px;
+          min-width: 300px;
+        }
+        figcaption.style-title {
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+}

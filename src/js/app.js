@@ -14,25 +14,23 @@ const DOM_ELEMENTS = {
 };
 
 function initApp() {
-  All.mobileMenu();
-  All.renderBrands();
-  All.renderStyles();
-  All.renderProducts(All.newArrivals, DOM_ELEMENTS.newArrivalsContainer);
-  All.renderProducts(All.topSelling, DOM_ELEMENTS.topSellingContainer);
-  All.renderReviews();
-  All.renderCurrentReview();
-  All.renderReviewsPerWidth();
-
-  DOM_ELEMENTS.closePromo.addEventListener("click", () => {
-    DOM_ELEMENTS.promoContainer.style.display = "none";
-  });
-  DOM_ELEMENTS.viewAll[0].addEventListener("click", () => {
+  try {
+    All.mobileMenu();
+    All.renderBrands();
+    All.renderStyles();
     All.renderProducts(All.newArrivals, DOM_ELEMENTS.newArrivalsContainer);
-  });
-  DOM_ELEMENTS.viewAll[1].addEventListener("click", () => {
     All.renderProducts(All.topSelling, DOM_ELEMENTS.topSellingContainer);
-  });
-  DOM_ELEMENTS.submitEmail.addEventListener("click", All.validator);
+    All.renderReviews();
+    All.renderCurrentReview();
+    All.renderReviewsPerWidth();
+
+    DOM_ELEMENTS.closePromo.addEventListener("click", () => {
+      DOM_ELEMENTS.promoContainer.style.display = "none";
+    });
+    DOM_ELEMENTS.submitEmail.addEventListener("click", All.validator);
+  } catch (err) {
+    console.error("Can't initiate app", err);
+  }
 }
 
 initApp();
