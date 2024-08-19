@@ -1,4 +1,4 @@
-# Desafio 02 Front-end || Compass Uol
+# Desafio 2 – Criando uma página web || Compass Uol
 ###### Estagiário Vinícius Vaz
  
 #### Um projeto de front-end para criar uma página web responsiva e interativa.
