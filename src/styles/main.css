@@ -290,7 +290,6 @@ main.site-main {
     justify-content: center;
     align-items: center;
     overflow: hidden;
-
     div.reviews-title--container {
       display: flex;
       justify-content: space-between;
@@ -299,6 +298,7 @@ main.site-main {
       max-width: 1229px;
       width: 100%;
       margin: 0 auto;
+      
 
       nav.reviews-nav--container {
         display: flex;
